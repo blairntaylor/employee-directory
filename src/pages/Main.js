@@ -8,21 +8,26 @@ function Main() {
   useEffect(() => {
     fetch("https://randomuser.me/api/?inc=name,dob,phone,email&results=10")
       .then((res) => res.json())
-      .then((data) => setEmployees(data));
+      .then((data) => {
+        setEmployees(data);
+        console.log(data);
+      });
   }, []);
 
   return (
     <>
       <Container>
         <Card.Group itemsPerRow={3}>
-          {employees.map((employee) => (
-            <CardData
-              name={employee.name}
-              dob={employee.dob}
-              phone={employee.phone}
-              email={employee.email}
-            />
-          ))}
+          {employees
+            ? "loading"
+            : employees.map((employee) => {
+                <CardData
+                  name={employee.name}
+                  dob={employee.dob}
+                  phone={employee.phone}
+                  email={employee.email}
+                />;
+              })}
         </Card.Group>
       </Container>
     </>
