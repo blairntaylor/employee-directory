@@ -1,20 +1,19 @@
 import React, { useEffect, useState } from "react";
-import CardData from "./CardData";
+import CardData from "../components/CardData";
 import { Container, Card } from "semantic-ui-react";
 
 function Main() {
   const [employees, setEmployees] = useState([]);
 
   useEffect(() => {
-    fetch("https://randomuser.me/api/?results=10&inc=name,dob,phone,email")
-      .then((response) => response.json())
-      .then((data) => setEmployees(data.results));
+    fetch("https://randomuser.me/api/?inc=name,dob,phone,email&results=10")
+      .then((res) => res.json())
+      .then((data) => setEmployees(data));
   }, []);
 
   return (
     <>
       <Container>
-        <h1>Search Data</h1>
         <Card.Group itemsPerRow={3}>
           {employees.map((employee) => (
             <CardData
