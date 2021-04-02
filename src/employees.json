@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "name": "Maya Gabeira",
+        "dept": "marketing",
+        "phone": "303-100-1987",
+        "email": "maya@email.com"
+    },
+    {
+        "id": 2,
+        "name": "Maud Wagner",
+        "dept": "finance",
+        "phone": "303-300-1961",
+        "email": "maud@email.com"
+    },
+    {
+        "id": 3,
+        "name": "Yaa Asantewaa",
+        "dept": "operations",
+        "phone": "303-170-1921",
+        "email": "yaa@email.com"
+    },
+    {
+        "id": 4,
+        "name": "Amna Haddad",
+        "dept": "hr",
+        "phone": "303-210-1989",
+        "email": "amna@email.com"
+    },
+    {
+        "id": 5,
+        "name": "Mae Jemison",
+        "dept": "tech",
+        "phone": "303-170-1956",
+        "email": "mae@email.com"
+    },
+    {
+        "id": 6,
+        "name": "Serena Williams",
+        "dept": "marketing",
+        "phone": "303-260-1981",
+        "email": "serena@email.com"
+    },
+    {
+        "id": 7,
+        "name": "Venus Williams",
+        "dept": "finance",
+        "phone": "303-170-1980",
+        "email": "venus@email.com"
+    },
+    {
+        "id": 8,
+        "name": "Lakshami Bai",
+        "dept": "operations",
+        "phone": "303-180-1858",
+        "email": "lakshami@email.com"
+    },
+    {
+        "id": 9,
+        "name": "Wilma Rudolph",
+        "dept": "hr",
+        "phone": "303-120-1944",
+        "email": "wilma@email.com"
+    },
+    {
+        "id": 10,
+        "name": "Xian Zhang",
+        "dept": "tech",
+        "phone": "303-300-1958",
+        "email": "xian@email.com"
+    }
+]
